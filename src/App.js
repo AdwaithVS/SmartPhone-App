@@ -4,6 +4,7 @@ import AddSmart from './components/AddSmart';
 import SearchSmart from './components/SearchSmart';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import DeleteSmart from './components/DeleteSmart';
+import ViewAll from './components/ViewAll';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<AddSmart/>}/>
         <Route path="/search" element={<SearchSmart/>}/>
         <Route path="/delete" element={<DeleteSmart/>}/>
+        <Route path="/viewall" element={<ViewAll/>}/>
       </Routes>
     </BrowserRouter>
   );
